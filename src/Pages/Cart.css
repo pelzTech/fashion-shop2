@@ -1,0 +1,122 @@
+/* Cart.css */
+
+.cart-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .cart-page p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  li p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  li button {
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #d03c20;
+  }
+  
+  .total-price {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .total-price h3 {
+    margin: 0;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cart-page {
+      padding: 10px;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li h4 {
+      margin-bottom: 8px;
+    }
+  
+    li p {
+      font-size: 12px;
+    }
+  
+    li button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,104 @@
+/* src/Components/Payment.css */
+
+.payment-page {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-page h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment-page h3 {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .payment-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .payment-page li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .payment-page li:last-child {
+    border-bottom: none;
+  }
+  
+  .payment-page li h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .payment-page li p {
+    margin: 0;
+    color: #777;
+  }
+  
+  .payment-page .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .payment-page .payment-methods {
+    margin-top: 20px;
+  }
+  
+  .payment-page .payment-methods label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .payment-page .payment-methods input {
+    margin-right: 10px;
+  }
+  
+  .payment-page button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-page button:hover {
+    background-color: #0056b3;
+  }
+
+  .payment-page button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+  }
+  
+  .payment-page p {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+  }
+  

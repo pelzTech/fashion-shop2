@@ -1,0 +1,136 @@
+/* General Styles */
+.latest-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.latest-header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Latest Products Grid */
+.latest-page {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #555;
+}
+
+.add-to-cart-btn {
+  background-color: #1a2238;
+  color: #b45b5b;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: brown;
+  transform: scale(1.05);
+}
+
+/* Navigation Arrow */
+.navigate-latest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  color: #F5E7DE;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.arrow-icon:hover {
+  transform: translateX(5px);
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .latest-header {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .add-to-cart-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .arrow-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-container {
+    padding: 15px;
+  }
+
+  .latest-header {
+    font-size: 1.8rem;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart-btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
